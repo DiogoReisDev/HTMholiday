@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.stars-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.plasma {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, #fffc00, #ff8100);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none; /* Permitir que o mouse interaja com os elementos abaixo */
+  mix-blend-mode: screen; /* Adiciona um efeito de mistura de cores */
+}
